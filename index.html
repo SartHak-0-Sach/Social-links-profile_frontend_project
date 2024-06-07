@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Social links profile</title>
+    <title>Social links profile component</title>
 
-  <link rel="stylesheet" href="style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="jessica" id="image" />
+      <div id="name">Jessica Randall</div>
+      <div id="country">London, United Kingdom</div>
+      <div id="description">"Front-end developer and avid reader."</div>
 
-  <div class="container">
-    <div class="profile-pic">
-
-      <img src="/assets/images/avatar-jessica.jpeg" alt="display picture of user">
-      <br>
-
-      <h1>Jessica Randall</h1>
-      <p>London, United Kingdom</p>
-      <br>
-      <p>"Front-end developer and avid reader"</p>
-      <br>
-
-      <div class="social-links"><h4>GitHub</h4></div>
-      <div class="social-links"><h4>Frontend Mentor</h4></div>
-      <div class="social-links"><h4>LinkedIn</h4></div>
-      <div class="social-links"><h4>Twitter</h4></div>
-      <div class="social-links"><h4>Instagram</h4></div>
-
+      <div class="buttons">
+        <a href="#" class="btn">GitHub</a>
+        <a href="#" class="btn">Frontend Mentor</a>
+        <a href="#" class="btn">LinkedIn</a>
+        <a href="#" class="btn">Twitter</a>
+        <a href="#" class="btn">Instagram</a>
+      </div>
     </div>
-  </div>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-
-</body>
+  </body>
 </html>
