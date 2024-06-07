@@ -1,17 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-:root {
-    --green: hsl(75, 94%, 57%);
-    --white: hsl(0, 0%, 100%);
-    --grey: hsl(0, 0%, 20%);
-    --dark-grey: hsl(0, 0%, 12%);
-    --off-black: hsl(0, 0%, 8%);
-}
-
-* {
+html,
+body {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15 px;
+    font-family: 'Figtree', Arial, sans-serif;
+    text-align: center;
 }
 
+.container {
+    background-color: hsl(0, 0%, 12%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+#image {
+    border-radius: 100px;
+    width: 80px;
+}
+
+#name {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+#country {
+    color: hsl(75, 94%, 57%);
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#description {
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+/* Button styles */
+.buttons .btn {
+    display: block;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Hover and focus states */
+.buttons .btn:hover,
+.buttons .btn:focus {
+    background-color: #a4ff00;
+    color: #111;
+}
+
+/* Adding a subtle box-shadow for the focus state */
+.buttons .btn:focus {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+}
